@@ -6,25 +6,74 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/echotopia"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
-      <span>Dashboard</span>
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li class="main-title">
+          <span class="iconify" data-icon="mdi:view-dashboard"></span>
+          <h1>Dashboard</h1>
+        </li>
+
+        <li>
+          <span class="iconify" data-icon="mdi:home"></span>
+          <span>Home</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:account-box"></span>
+          <span>Profile</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:message"></span>
+          <span>Messages</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:history"></span>
+          <span>History</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:calendar-check"></span>
+          <span>Tasks</span>
+        </li>
+        <li>
+          <span
+            class="iconify"
+            data-icon="mdi:google-circles-communities"
+          ></span>
+          <span>Communities</span>
+        </li>
+        <li class="settings">
+          <span class="iconify" data-icon="mdi:cog"></span>
+          <span>Settings</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:face-agent"></span>
+          <span>Support</span>
+        </li>
+        <li>
+          <span class="iconify" data-icon="mdi:shield-lock"></span>
+          <span>Privacy</span>
+        </li>
       </ul>
     </nav>
 
     <header>
+      <span class="iconify" data-icon="mdi:magnify"></span>
       <input type="search" id="search" name="search" />
+      <span class="iconify" data-icon="mdi:bell-ring-outline"></span>
       <span>Morgan Oakley</span>
     </header>
 

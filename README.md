@@ -11,3 +11,6 @@
 ## Acknowledgements
 
 - Inspired by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
+- Dashboard font by Erik Kirtley from [fontlibrary](https://fontlibrary.org/en/font/echotopia)
+- Main text font from [Google Fonts](https://fonts.google.com/specimen/Roboto+Slab)
+- Material Design icons from [Iconify](https://icon-sets.iconify.design/mdi/)
