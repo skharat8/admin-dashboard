@@ -14,6 +14,9 @@ html {
 }
 
 :root {
+  --primary-color: rgb(25, 172, 123);
+  --accent-color: rgb(224, 187, 22);
+  --icon-size: 2rem;
   --base-padding: 2rem;
 }
 
@@ -24,10 +27,15 @@ body {
   grid: 1fr 5fr / 1fr 6fr;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 nav {
   grid-row: 1 / 3;
   color: white;
-  background-color: rgb(25, 172, 123);
+  background-color: var(--primary-color);
   padding: var(--base-padding);
 
   & ul {
@@ -37,7 +45,7 @@ nav {
     gap: 1em;
 
     & .iconify {
-      font-size: 2.2rem;
+      font-size: var(--icon-size);
     }
   }
 
