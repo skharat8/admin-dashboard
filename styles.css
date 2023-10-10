@@ -15,6 +15,7 @@ html {
 
 :root {
   --primary-color: rgb(25, 172, 123);
+  --primary-color-light: rgb(101, 197, 165);
   --accent-color: rgb(224, 187, 22);
   --icon-size: 2rem;
   --base-padding: 2rem;
@@ -84,9 +85,85 @@ nav {
 }
 
 header {
+  display: grid;
+  gap: 15px;
   z-index: 1;
   padding: var(--base-padding);
+  padding-right: calc(3 * var(--base-padding));
   box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto 120px;
+  align-items: center;
+  gap: 10px;
+
+  & .iconify {
+    font-size: 2.4rem;
+  }
+
+  & img {
+    width: 45px;
+  }
+
+  & input[type="search"] {
+    height: 3.2rem;
+    background-color: rgb(216, 221, 228);
+    border-style: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-right: 4em;
+  }
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+.user-actions {
+  display: grid;
+  grid: repeat(2, 20px) / 70px minmax(300px, 1fr) repeat(3, 120px);
+  align-items: center;
+  gap: 5px 20px;
+
+  & img {
+    width: 70px;
+    grid-row: 1 / -1;
+  }
+
+  & span:first-of-type {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  & span:nth-of-type(2) {
+    grid-row: 2;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  & button {
+    grid-row: 1 / -1;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 30px;
+    transition: 0.2s all ease;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+  }
+
+  & button:hover {
+    background-color: var(--primary-color-light);
+    transform: translateY(-2px);
+  }
+
+  & button:active {
+    transform: translateY(3px);
+  }
 }
 
 main {
